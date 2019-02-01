@@ -1,0 +1,162 @@
+.required:after {
+    content:" *";
+    color: red;
+}
+
+[data-tip] {
+	position:relative;
+
+}
+[data-tip]:before {
+	content:'';
+	/* hides the tooltip when not hovered */
+	display:none;
+	content:'';
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #1a1a1a;	
+	position:absolute;
+	top:30px;
+	left:35px;
+	z-index:8;
+	font-size:0;
+	line-height:0;
+	width:0;
+	height:0;
+}
+[data-tip]:after {
+	display:none;
+	content:attr(data-tip);
+	position:absolute;
+	top:35px;
+	left:0px;
+	padding:5px 8px;
+	background:#1a1a1a;
+	color:#fff;
+	z-index:9;
+	font-size: 0.75em;
+	height:18px;
+	line-height:18px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	white-space:nowrap;
+	word-wrap:normal;
+}
+[data-tip]:hover:before,
+[data-tip]:hover:after {
+	display:block;
+}
+
+.navbar {
+	margin-bottom: 10px;
+}
+
+.navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #606c76;
+}
+
+.navbar li {
+	float: left;
+	margin-bottom: 0;
+}
+
+.navbar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navbar li a:hover {
+	background-color: #4C5359;
+}
+
+.navbar li a.active {
+	background-color: #A0AFBB;
+}
+
+.info {
+	color: #89A9BD;
+}
+
+.custom {
+	color: #89A9BD;
+}
+
+.secure {
+	color: #89A9BD
+}
+
+.cont {
+	margin: 0.7em 0 0.7em 0;
+}
+
+#footer {
+	padding: 0em 0.4em 2em 0.4em;
+}
+
+#content {
+	padding: 0em 0.4em 0em 0.4em;
+}
+
+
+/*message*/
+
+.success {
+	border: 0.1rem solid green;
+}
+
+.error {
+	border: 0.1rem solid red;
+}
+
+.message {
+	position: relative;
+	padding: .75rem 1.25rem;
+	margin-bottom: 1rem;
+	border-radius: .25rem;
+	display: none;
+	opacity: 0;
+	transition: visibility 0s, opacity 1s linear;
+}
+
+.fade {
+	display: block;
+	opacity: 1;
+}
+
+.inbox tr:hover {
+	background-color: #A0AFBB;
+	cursor: pointer;
+}
+
+
+/* text on image */
+
+.error-page {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.img-text {
+	font-size: 2em;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.flexContainer {
+    display: flex;
+}
+
+.inputField {
+    flex: 16;
+}
