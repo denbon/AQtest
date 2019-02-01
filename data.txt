@@ -1,0 +1,3 @@
+location: USA,Euro,CIS,kanada
+weight: first, second, third, fourth
+dist: first_d, second_d, third_d, fourth_d
