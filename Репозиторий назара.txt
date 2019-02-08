@@ -1,1 +1,7 @@
 https://bitbucket.org/Nazar_goshko/testing-methods
+
+
+git clone/pull https://bitbucket.org/Nazar_goshko/testing-methods
+
+
+git checkout dtt
